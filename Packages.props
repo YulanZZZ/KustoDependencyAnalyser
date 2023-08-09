@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<MSBuildAllProjects>$(MSBuildThisFileFullPath);$(MSBuildAllProjects)</MSBuildAllProjects>
+	</PropertyGroup>
+	<ItemGroup>
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="APSDK.Managed.Core" Version="23.3.23003" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="ApSecretStore.Managed.Core.Pop3" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Autofac" Version="4.9.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="AutoMapper" Version="10.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Core" Version="1.32.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Core.Amqp" Version="1.2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Data.Tables" Version="12.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Deployments.Expression" Version="1.0.173" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Deployments.Templates" Version="1.0.173" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Identity" Version="1.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Messaging.EventHubs" Version="5.7.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Messaging.EventHubs.Processor" Version="5.7.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Messaging.ServiceBus" Version="7.2.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.ResourceManager" Version="1.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.ResourceManager.KeyVault" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.ResourceManager.ServiceBus" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.ResourceManager.Storage" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Security.KeyVault.Certificates" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Security.KeyVault.Keys" Version="4.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Security.KeyVault.Secrets" Version="4.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Blobs" Version="12.17.0-alpha.20230614.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Common" Version="12.16.0-alpha.20230614.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Files.DataLake" Version="12.15.0-alpha.20230614.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Files.DataLake.Extensions.Compression" Version="1.0.0-beta.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Files.Shares" Version="12.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Azure.Storage.Queues" Version="12.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="AzureThrottle.ClientImpl" Version="1.4.2109.81" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Ben.Demystifier" Version="0.1.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BenchmarkDotNet" Version="0.13.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BenchmarkDotNet.Core" Version="0.10.14" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BinaryRemoval.PartnerRelease.MockObjectFramework" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bing.WebData.Bling" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BitFaster.Caching" Version="1.0.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BldSync" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.Core.CSharp" Version="11.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.Core.Net" Version="3.6.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.CSharp" Version="11.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.NET" Version="3.6.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.Rpc.NET" Version="3.6.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Bond.Runtime.CSharp" Version="11.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="BouncyCastle" Version="1.8.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CardinalityEstimation.Signed" Version="1.9.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Castle.Core" Version="5.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="ccl.ship" Version="16.0.23417.12000" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CliFx" Version="2.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CodeSign.Exchange" Version="1.3.15" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CommandLineParser" Version="2.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CoreWCF.ConfigurationManager" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CoreWCF.Http" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CoreWCF.NetTcp" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CoreWCF.Primitives" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CoreWCF.WebHttp" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="coverlet.collector" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CRC32C.Net-Signed" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="CredSMARTSdk" Version="16.1.2164" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DallasBinaries.EntityFramework" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DallasBinaries.PartnerReleaseTorusSsp" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Deployment.ComponentFramework" Version="1.1.40" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Deployment.SxS" Version="0.0.87" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DeviceDetector.NET.StrongNameSigned" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DiffPlex" Version="1.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DmsSdk" Version="16.1.2380.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DmsSdk.NetCore" Version="16.1.2380.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DNSClientCache" Version="1.0.2257.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="DocumentFormat.OpenXml" Version="2.11.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Elasticsearch.EOP" Version="5.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Elasticsearch.Net" Version="5.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="EntityFramework" Version="6.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="EntityServe.Service" Version="1.0.434" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Ev2.ArtifactsGenerator.Arm" Version="6.0.2234.932" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Ev2.ArtifactsGenerator.Arm.CodeGen" Version="5.0.2249.173" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Ev2.ArtifactsGenerator.M365" Version="6.1.2250.943" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Exchange.Data.ApplicationLogicResources" Version="1.0.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Exchange.Focus.BuildTasks" Version="1.1.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="ExchangeLabBuildTools" Version="2.1.53" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="FileCache.Signed" Version="3.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="FlexibleTransportManifestManager" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="FluentAssertions" Version="6.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="FluentValidation" Version="9.5.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Api.CommonProtos" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Apis" Version="1.55.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Apis.Auth" Version="1.55.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Apis.Core" Version="1.55.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Apis.PeopleService.v1" Version="1.55.0.2437" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.OrTools" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.OrTools.runtime.win-x64" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Protobuf" Version="3.21.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Google.Protobuf.Tools" Version="3.11.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Graphlib.Identifiers" Version="2.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Graphlib.Security.Cryptography" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.AspNetCore" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.AspNetCore.Server" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.AspNetCore.Server.ClientFactory" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.AspNetCore.Web" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Core" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Core.Api" Version="2.51.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Core.NativeDebug" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Core.Testing" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Net.Client" Version="2.51.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Net.Client.Web" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Net.ClientFactory" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Net.Common" Version="2.51.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Grpc.Tools" Version="2.45.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="HtmlAgilityPack" Version="1.8.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="IgnoresAccessChecksToGenerator" Version="0.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="intelmkl.redist.win-x64" Version="2022.2.0.9563" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="intelmkl.static.win-x64" Version="2022.2.0.9563" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="intelopenmp.devel.win" Version="2022.0.0.3663" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="intelopenmp.redist.win" Version="2022.0.0.3663" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="inteltbb.redist.win" Version="2021.7.0.9551" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Internal.Exchange.TnefTestData" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="InventoryEntities" Version="16.1.2389" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="IsExternalInit" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Kerberos.NET" Version="3.3.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Killswitch.Managed.Netstandard.Ship" Version="1.0.0.12014" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="KillSwitch.Managed.Ship" Version="1.0.0.7208" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="LbAssets" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Libuv" Version="1.9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="LightGBM" Version="2.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Live.XPander.Utilities" Version="4.4.18983.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="log4net" Version="2.0.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Magick.NET-Q16-AnyCPU" Version="7.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MailKit" Version="2.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Markdig.Signed" Version="0.17.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MessagePack" Version="2.2.85" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MessagePack.Annotations" Version="2.2.85" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AAD.Throttling.Throttle" Version="1.3.2025.284" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AdCenter.ReliableTransferLibrary" Version="1.0.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Applications.Telemetry.Azure" Version="1.1.156" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Applications.Telemetry.Server" Version="1.1.244" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Applications.Telemetry.Server.NetCore" Version="1.1.255.39" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.OData" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.SignalR.Client" Version="2.4.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.SignalR.Core" Version="2.4.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.WebApi.Client" Version="5.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.WebApi.Core" Version="5.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.WebApi.SelfHost" Version="5.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Authentication.Certificate" Version="3.1.15" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.ConcurrencyLimiter" Version="3.1.27" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Connections.Abstractions" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.DataProtection" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Http.Connections.Client" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Http.Connections.Common" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Http.Features" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.JsonPatch" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.27" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc.WebApiCompatShim" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.OData" Version="8.0.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Razor.Language" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Routing.Abstractions" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Server.Kestrel.Core" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Server.Kestrel.Https" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.SignalR.Client" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.SignalR.Common" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="3.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.TestHost" Version="6.0.19" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.ActiveDirectory.GraphClient.FirstParty" Version="1.0.9009" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Amqp" Version="2.5.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Cosmos" Version="3.31.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Cosmos.Encryption" Version="1.0.0-preview6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Cosmos.Encryption.Custom" Version="1.0.0-preview04" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Cosmos.Table" Version="1.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DataLake.InternalStoreCosmosCompression" Version="10.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DataLake.InternalStoreSDK" Version="2.0.19" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DataLake.Store" Version="1.1.23" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DocumentDB" Version="2.17.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DocumentDB.ChangeFeedProcessor" Version="2.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.DocumentDB.Core" Version="2.10.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.EventHubs" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.EventHubs.Processor" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.KeyVault" Version="3.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.KeyVault.Core" Version="3.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.KeyVault.WebKey" Version="3.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Cloud.Platform" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Cloud.Platform.Aad" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Cloud.Platform.Azure" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Cloud.Platform.Communication.Wcf" Version="9.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Data" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Kusto.Ingest" Version="10.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.AppService.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.BatchAI.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Cdn.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Compute.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.ContainerInstance.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.ContainerRegistry.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.ContainerService.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.CosmosDB.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.DataFactory" Version="6.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.DataLake.Analytics" Version="4.2.0-private3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.DataLake.InternalAnalytics.Scope" Version="0.1.9-preview" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.DataLake.Store" Version="2.2.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Dns" Version="3.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Dns.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.EventHub" Version="2.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.EventHub.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Graph.RBAC.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.KeyVault.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Locks.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Monitor.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Msi.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Network.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.PrivateDns.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Redis.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.ResourceManager.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Search.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.ServiceBus.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Sql.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.Storage.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Management.TrafficManager.Fluent" Version="1.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Relay" Version="2.0.0-preview1-20180523" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Services.AppAuthentication" Version="1.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Storage.Blob" Version="11.1.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Storage.Common" Version="11.1.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Storage.File" Version="10.0.3-Release-jenkins-dotnet-nuget-166" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Azure.Storage.Queue" Version="11.1.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AzureAd.Icm.Types.amd64" Version="2.1.10.50" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AzureAd.Icm.WebService.Client.amd64" Version="2.1.10.50" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AzureAD.SmartSessionEvaluator" Version="3.2.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.AzureAD.XtapLib" Version="2.1.12572" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Bcl.Async" Version="1.0.165" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Bcl.HashCode" Version="1.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.BDM.DnsWebServiceDualWrite" Version="0.13.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Bing.Platform.DataModel" Version="1.8.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.BlingFire" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Build.Framework" Version="16.0.461" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Build.Tasks.Core" Version="16.0.461" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Build.Utilities.Core" Version="16.0.461" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Ceres.FormatDetection" Version="17.59.715" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cloud.InstrumentationFramework" Version="3.4.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cloud.InstrumentationFramework.Metrics.Extensions" Version="2.2021.415.1131" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cloud.InstrumentationFramework.VC14" Version="3.1.6.105" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cloud.Metrics.Client" Version="2.2023.104.1900" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.Razor" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeAnalysis.VisualBasic" Version="2.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeIndex.CloudBuild" Version="0.1.2159-alpha" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeIndex.EnvVarDump" Version="0.1.2159-alpha" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeIndex.LSIF.SelfContained.MSFT_InternalOnly" Version="0.1.2159-alpha" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CodeQuality.Analyzers" Version="3.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Codex.CorrelatedInstrumentationFramework" Version="1.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CommonDataPlatform.Configs" Version="8.6.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CommonSchema.CorrelationVector" Version="4.0.21012.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CorrelationVector" Version="1.0.42" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cosmos.ScopeSDK" Version="1.202210111.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cosmos.ScopeSDK.Signed" Version="1.202108301.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cosmos.VcClient" Version="2.0.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CPR.Orderings" Version="2023.517.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Cryptography.DKM" Version="1.17.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Data.Edm" Version="5.8.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Data.Encryption.Cryptography" Version="0.2.0-pre" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Data.OData" Version="5.8.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Data.Services.Client" Version="5.8.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Data.SqlClient" Version="3.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Datacenter.TenantLockbox" Version="16.15.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.DataClassification.Client" Version="1.0.1594" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.DataClassification.Edm.Client" Version="17.0.5960" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Datamap.Agent.Core.Hosting" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.DataMap.Agent.Minimal" Version="0.3.23" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Diagnostics.Runtime" Version="1.1.116301" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="2.0.62" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.DotNet.IbcMerge" Version="5.1.0-beta.21377.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.DotNet.PlatformAbstractions" Version="2.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.Certlocker" Version="16.0.815" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.ContentAuthZ" Version="3.0.52" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.Core.TimeZone" Version="1.0.24" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.DsApi.Rpc.ClientSlim" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.FocusedInbox.Models" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.IPCommon.PolicyEvaluation" Version="1.2.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.OAuth.UserMode" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.OfficeGraph.SpoolsScaleOutMapper" Version="3.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.OWA.Client.VariantConfiguration" Version="17.9999.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.Relevance.Arthur" Version="0.3.0.16" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.Relevance.Merlin" Version="0.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.Relevance.RankerDecoder.PeopleDecoder" Version="1.0.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Exchange.StiClient" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ExtensionHost.Communication" Version="1.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="3.1.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.DependencyModel" Version="3.1.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.FileProviders.Abstractions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.FileProviders.Physical" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.FileSystemGlobbing" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Hosting" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Http" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.Configuration" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.EventLog" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Logging.EventSource" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.ObjectPool" Version="5.0.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Options" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Extensions.Primitives" Version="3.1.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.Categorization" Version="3.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.DescriptiveMonitoring" Version="3.1.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.DescriptiveMonitoring.Deprecated" Version="2.0.27.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.DescriptiveMonitoring.Three" Version="3.15.0-pre.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.Hauk.Models" Version="0.20220302.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.Search" Version="16.16.120.105" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Fast.SpoolsScaleOutTokenService" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Flighting.Runtime" Version="0.7.167.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.GenevaAgentChannel" Version="5.1.15580001" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Grainlib.Common" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Grainlib.Message" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Grainlib.Message.Format.Mime" Version="2.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Grainlib.Message.Payload.Http" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Grainlib.Message.Transformer.LockyLock" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Graph" Version="3.35.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Graph.AGS.Utils" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Graph.Core" Version="1.25.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.GraphServices.Billing.Core" Version="1.0.230" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.GraphServices.Billing.EventHub" Version="1.0.230" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Griffin.Assistant.Client" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Griffin.HaaSFPGAManagerClient" Version="2.0.77" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Hygiene.SPOATPApp.Common" Version="1.14.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.Azure.Regions" Version="2.9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.IdentityTypes" Version="0.22.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.Security.Ale" Version="4.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.Security.Ale.BackgroundProcessing" Version="4.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.Security.Ale.CustomerKey.Client" Version="4.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.Security.Ale.KeyStorage.Cosmos" Version="4.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.TxpBillingSdk" Version="2.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.TxpBillingSdk.EventHub" Version="2.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IC3.ServiceShared.TxpBillingSdk.SettingsProvider" Version="2.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.Client" Version="4.44.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.Client.Extensions.Msal" Version="2.20.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.ServerAuthorization" Version="2.5.14" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.Services.Billing" Version="1.0.11061" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.Web" Version="1.23.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Identity.Web.UI" Version="1.23.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel" Version="6.1.7600.16394" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Abstractions" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Authorization" Version="13.10.8897" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Logging" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Protocols" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Protocols.SignedHttpRequest" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Protocols.WsFederation" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Protocols.WsTrust" Version="6.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.S2S" Version="3.33.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.S2S.SubstrateExtensions" Version="3.33.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.S2S.Telemetry" Version="3.33.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.S2S.Tokens" Version="3.33.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Tokens" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Tokens.Jwt" Version="5.4.0-internal" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Tokens.Saml" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Validators" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IdentityModel.Xml" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.InformationProtection.File" Version="1.13.161" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Internal.Analyzers" Version="2.9.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Internal.Security.Cryptography" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Internal.SecuritySignals.SiphonClientLibrary" Version="2.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.IO.RecyclableMemoryStream" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.LegacyWordBreaker.Office" Version="2.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Basic.Client" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Client" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Config" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Core" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Logging" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.Protos" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Auth.SAS.Client" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Authentication" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.CommonServices" Version="1.1.33" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.ActivityContext" Version="3.1.23" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Address" Version="1.1.22" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Caches" Version="4.2.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.ConfigurationSettings" Version="2.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Diagnostics" Version="5.0.13" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.DiagnosticsLog" Version="4.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.DotNetAbstractions" Version="1.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Environment" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.EventLog" Version="1.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Extensions" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.GroupLinks" Version="3.0.34" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.IdSerialization" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Localization" Version="1.1.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Mapi" Version="1.0.15" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.MetricsTracker" Version="3.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Network.VariantConfiguration" Version="1.0.22" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.NetworkAddress" Version="0.0.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Notification" Version="3.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.PassiveMonitoring" Version="1.0.58" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.PassiveMonitoring.ExoProtocolPassive" Version="1.0.17" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.PassiveMonitoring.PIIScrubber" Version="1.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.PassiveMonitoring.Tests" Version="1.0.33" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Portable.Registry" Version="0.1.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.PropertyDefinition" Version="8.1.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Security" Version="2.3.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Serialization" Version="1.0.14" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.SubstrateCrossServiceRequestScope" Version="0.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.TaskDispatcher" Version="1.0.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Telemetry.ECSClient" Version="2.0.0-rc.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Telemetry.Enrichment" Version="1.0.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Telemetry.R9" Version="3.0.0-rc.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Telemetry.SDKLogger" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Time" Version="2.0.20" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.UnitTest.Common" Version="1.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Utility" Version="4.3.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Core.Xml" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Common" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Client" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Common" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Config" Version="1.0.118" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.DirectoryVariantConfig" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Discovery" Version="1.0.141" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Identity" Version="1.0.141" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Protocol" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Routing" Version="1.0.38" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Directory.Proxy.Service" Version="1.0.168" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.DsApi.DsApiMezzo" Version="1.1.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.DsApi.Utils" Version="1.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.EcsConfiguration" Version="1.1.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Groups.Authorization" Version="1.0.66" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Groups.Contracts" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Groups.Management.Clients" Version="1.0.111" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.HA.SpareStorage.Client" Version="0.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Hygiene.ModelBuilderProcessor" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.KVCache.Client" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.KVCache.ClientUnitTests" Version="1.0.26" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.KVCache.Interface" Version="1.0.24" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.KVCache.NetCoreClient" Version="2.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Mailbox.Common" Version="1.0.100" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.NanoRouter.Deflector" Version="0.0.21" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.OAuth.Core" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RCA.RpcPingLib" Version="1.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RestClient" Version="2.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.CppCLRCommon" Version="1.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.RoutingAsyncRpcClient" Version="1.7.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.RoutingAsyncRpcCLRClient" Version="1.5.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.RoutingEndpointLookup" Version="1.4.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.RoutingEndpointLookup.Contract" Version="1.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.RpcLocalBaseClient" Version="1.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.SharedCacheAsyncRpcClient" Version="1.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.RoutingPlane.SharedCacheCLRClient" Version="1.5.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.SDDriver" Version="1.3.105" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.SDDriver.DSAPI" Version="0.3.23" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.SDDriver.Schema" Version="4.2.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.SDDriver.Schema.Resource" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Sds.Client" Version="2.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Sds.Client.Implementation" Version="7.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Security.CredSMART" Version="16.1.282" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Services.RequestMonitor" Version="1.0.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.StoreObjects.Abstractions" Version="21.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.StoreObjects.Identity" Version="18.0.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Substrate.Bus" Version="3.4.3-M365PassiveMon-Preview" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Substrate.Sdk.DsApi" Version="1.0.0-Alpha.54" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Substrate.Sdk.ExtensionContracts" Version="1.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Substrate.Sdk.ProcessorContracts" Version="3.29.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Substrate.Sdk.SubstrateItem.DataModel" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.TestUtilities.ObjectTester" Version="1.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.TokenIssuer.Client" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Transport.InternetProtocol" Version="1.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.VariantConfiguration.BuildTasks" Version="3.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.VariantConfiguration.Core" Version="1.0.126" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.VariantConfiguration.ECS" Version="1.4.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.VariantConfiguration.ExCore" Version="1.0.85" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.VariantConfiguration.GlobalConfigData" Version="0.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Common" Version="1.3.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Monitor.Abstractions" Version="0.0.21" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Monitor.Runtime" Version="0.0.18" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Monitors" Version="0.5.10.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Monitors.Config" Version="0.0.17" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Scheduler" Version="10.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Scheduler.Config" Version="6.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.Scheduler.Server.Core" Version="1.2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.SelfTuneLib" Version="2.0.9.1-alpha" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Wlm.SelfTuneLib.Config" Version="2.0.2-alpha" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.M365.Xtap" Version="16.2.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Management.Infrastructure" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.CPuMath" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.DataView" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.FastTree" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.LightGbm" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.Mkl.Redist" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.OnnxRuntime" Version="1.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.OnnxRuntime.Managed" Version="1.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.Probabilistic" Version="0.3.1912.403" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ML.TimeSeries" Version="2.0.1-preview.22573.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Naas.Identity.Client" Version="0.2.28" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Net.Http.Headers" Version="2.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NET.Sdk.Functions" Version="4.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NETCore.Targets" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NLPFun" Version="2.25.12.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NLPFun.Core" Version="2.25.12.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.NLPFun.Native.win-x64" Version="2.25.12.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.O365.AuditingDataServiceSDK" Version="2.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.O365.ComplianceAuditSchema" Version="1.1.273" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.O365.ComplianceAuditSchema.Standard" Version="1.1.273" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.O365.HtmlParser.AngleSharp" Version="0.1.18" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.OData.Client" Version="7.15.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.OData.Core" Version="7.0.1.0-workaround" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Microsoft.OData.Core" Version="7.15.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.OData.Edm" Version="7.0.1.0-workaround" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Microsoft.OData.Edm" Version="7.15.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.OData.ModelBuilder" Version="1.0.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.ActiveMonitoring.Local.Runtime" Version="17.1.567" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.BigData.DataLoader.ADLSGen2Extension" Version="1.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.Inventory.EntitiesV2" Version="0.1.292" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.Networking.AzureStorageClient" Version="1.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.Networking.CoreUtils" Version="1.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.Networking.DnsApiClient" Version="2.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.OobmToolKit" Version="1.0.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.PowerHarvestingStorageClient" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.Datacenter.WorkerTaskFrameworkInternalProvider" Version="17.1.46" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.LockBox.ObjectModel" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Office.WorkerTaskFramework.Contracts.Pop3" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Online.AggregatorService.DeltaSync" Version="1.0.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.OpenApi" Version="1.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Ops.Cvs.Client" Version="11.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Ops.Image" Version="9.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Ops.Image.Pdna" Version="13.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Ops.NJsonApi" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Client" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Client.Routing" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Config.Environment" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Config.Environment.Abstractions" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Config.Extensions" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Config.Substrate" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Core" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Core.Pool" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Core.Time" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Grpc" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Proto.Common" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.Proto.HttpAnnotations" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Platform.TrafficSplit" Version="0.406.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Services.Common.Api" Version="0.468.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Services.PushNotifications.Client" Version="0.14.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Services.PushNotifications.Data" Version="0.14.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Outlook.Services.Scheduling.Places.API" Version="0.19.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Owin" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Owin.Cors" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Owin.Host.HttpListener" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Owin.Hosting" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Owin.Security" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Pillar.Common.Data.Classifications" Version="3.0.3995" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Pillar.Data.Classification" Version="3.0.2343" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Pillar.Data.Classification.Reporting" Version="3.0.2343" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Client" Version="6.7.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Client.Core" Version="2.3.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Client.Extended" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Core" Version="3.6.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Schemas" Version="3.1.12" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Polymer.Workflows.Requests" Version="3.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.Commands.Diagnostics" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.Commands.Management" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.Commands.Utility" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.ConsoleHost" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.CoreCLR.Eventing" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.MarkdownRender" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.Native" Version="6.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.SDK" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.PowerShell.Security" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Buffers.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.ClusterMetadata.Cosmic" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Collections" Version="1.18.0-dev" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Collections.Frozen" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Data.Classification" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Data.Validation" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.DependencyInjection.AutoActivation" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Enrichment.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Enrichment.Cosmic" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Essentials" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Hashing.xxHash" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.HttpClient.Tracing" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Latency" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Latency.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Latency.Exporters.PerfPanel" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Logging" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Logging.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Logging.Exporters.Geneva" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Logging.Fakes" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Metering.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Metering.Collectors.EventCounters" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Metering.Fakes" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Metering.Geneva" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Options.Validation" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Pools" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Redaction" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Redaction.Abstractions" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Redaction.xxHash" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Security.Abstractions" Version="1.15.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Telemetry" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Telemetry.Internal" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Telemetry.Internal.Http" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Text.Formatting" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Time" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Tracing" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Tracing.Exporters.Geneva" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Extensions.Tracing.Http" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.R9.Generators" Version="1.18.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Rest.ClientRuntime" Version="2.3.21" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Rest.ClientRuntime.Azure" Version="3.3.19" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Rest.ClientRuntime.Azure.Authentication" Version="2.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Rights.Management.SDK.Services.2.1.Windows.x64" Version="1.0.5225" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.RightsManagementServices.Core" Version="6.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.RightsManagementServices.Online.TpdConfigAuthor" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.Directory.ObjectStore.AspCompliantBond3Client" Version="3.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.Directory.ObjectStore.Client" Version="3.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.ObjectStore.AspCompliantBond3Client" Version="7.114.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.ObjectStore.Bond4Client" Version="7.38.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.ObjectStore.Client" Version="7.114.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.Platform.Parallax" Version="2020.5.27.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Search.Platform.Parallax.CodeGenerator" Version="2020.5.27.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SearchExt.SearchSettings" Version="1.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Security.CredScan.ClientLib" Version="1.8.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Security.EOP.Horizontals.Common" Version="1.0.0.39" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Security.EOP.Horizontals.Policy.Client" Version="1.0.0.39" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Security.EOP.Horizontals.Policy.Common" Version="1.0.0.39" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Security.EOP.Horizontals.RBAC.Common" Version="1.0.0.39" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SecurityCompliance.IpDomainManagement.Common" Version="1.0.31" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SecurityCompliance.IpDomainManagement.Data.Common" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SecurityCompliance.IpDomainManagement.Data.CosmosDb" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SecurityCompliance.IpDomainManagement.Data.Kusto" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SecurityCompliance.IpDomainManagement.Data.Storage" Version="1.0.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric" Version="8.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric.Data" Version="5.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric.Data.Extensions" Version="5.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric.Data.Interfaces" Version="5.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric.Diagnostics.Internal" Version="5.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.ServiceFabric.Services" Version="5.2.1571" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SharePointOnline.CSOM" Version="16.1.23019.12000" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Siphon.Client.Library" Version="7.1.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Siphon.Schema" Version="4.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ECS.Client" Version="11.0.0.303" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ECS.Client.AzureStorageCache" Version="11.0.0.303" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ECS.Core" Version="1.37.1.6250" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.Seatbelt.Core" Version="6.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.Seatbelt.Core.ClientHelpers" Version="8.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ServiceShared.AsyncProcessing" Version="23.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ServiceShared.AsyncProcessing.EventHub" Version="23.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Skype.ServiceShared.AsyncProcessing.Queue" Version="23.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Certificates" Version="5.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Cryptography.ProtectedData" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Cryptography.ProtectedData.Http" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.EopWorkflowClient" Version="5.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.FrontendClient" Version="8.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.FrontendService.Interfaces" Version="2.0.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Http" Version="6.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.PerformanceCounter" Version="5.1.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Rbac.FrontendClientUtils" Version="1.4.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Rbac.Interfaces" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Security.Tokens" Version="6.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Streaming" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Sonar.Xml" Version="4.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Spark" Version="2.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Spatial" Version="7.0.1-workaround" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Microsoft.Spatial" Version="7.15.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.InferenceClient" Version="2.1.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.OAuth.Core" Version="16.2.952" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.Polymer.FeatureStore" Version="9.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.Polymer.FeatureStore.Catalog" Version="9.9.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.Scd.Config.Library" Version="2.0.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Substrate.Sds.Schema" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.SubstrateSearch.QueryProcessing.Common" Version="1.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.TeamFoundationServer.Client" Version="16.181.0-preview" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.TestPlatform" Version="17.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.TestPlatform.ObjectModel" Version="17.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Toolkit.HighPerformance" Version="7.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Tools.MSInternal.ProtobufCodeGenerator" Version="1.1.16" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.TSS" Version="2.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.TypeScript.MSBuild" Version="3.9.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualBasic" Version="10.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Services.Client" Version="16.181.0-preview" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="16.181.0-preview" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Text.UI.Wpf" Version="17.0.491" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Threading" Version="16.0.102" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers" Version="16.7.54" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.VisualStudio.Validation" Version="15.5.31" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WCD.FileMetadata" Version="1.2018.817.32741" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Web.Administration" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Microsoft.Web.Administration" Version="11.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Win32.Registry" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Win32.Registry.AccessControl" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.Win32.SystemEvents" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WindowsAzure.Common" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WindowsAzure.Management.Compute" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WindowsAzure.Storage" Version="9.3.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WordBreaker" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WordBreaker.Office" Version="3.3.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WordBreaker.Office.HotfixData" Version="1.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WordBreaker.Office.Library.Dev16" Version="4878.1000.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WordBreaker.Office.Native" Version="0.1.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WSMan.Management" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Microsoft.WSMan.Runtime" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MimeKit" Version="2.10.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MimeKitLite" Version="2.15.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MonoMod.RuntimeDetour" Version="22.7.31.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Moq" Version="4.18.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MS.Msn.Runtime.whidbey" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Msbuild.Exchange" Version="17.3.80" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MsBuildRetail.Exchange" Version="0.0.116" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MservClient" Version="17.5.3418.4000" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MSN.Runtime.SDK" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MSTest.Corext" Version="10.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MSTest.TestAdapter" Version="3.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="MSTest.TestFramework" Version="3.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="murmurhash-signed" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NEST" Version="5.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NetFramework4.0.30319.compress" Version="1.2.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Newtonsoft.Json.Bson" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Nexus" Version="16.1.2389" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NJsonSchema" Version="9.13.37" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NLog" Version="4.7.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NLog.Extensions.Logging" Version="1.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NLog.Web.AspNetCore" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NPOI" Version="2.5.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NRedisTimeSeries" Version="1.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NSubstitute" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NSubstitute.Analyzers.CSharp" Version="1.0.16" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NSwag.MSBuild" Version="13.18.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NuGet.Build.Tasks.Pack" Version="6.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Nuget.Configuration" Version="4.9.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NuGet.Frameworks" Version="6.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Nuget.Packaging" Version="4.9.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Nuget.Packaging.Core" Version="4.9.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NuGet.Versioning" Version="6.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="NuPac.Tools" Version="2023.426.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OnnxRuntime.Client" Version="1.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry" Version="1.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Api" Version="1.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Exporter.Console" Version="1.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Exporter.Geneva" Version="1.3.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.0.0-rc9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Instrumentation.AspNet" Version="1.0.0-rc9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Instrumentation.AspNet.TelemetryHttpModule" Version="1.0.0-rc9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Instrumentation.GrpcNetClient" Version="1.0.0-rc9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OSS.RoslynAnalysis" Version="1.4.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="OSS.ScopeIdentifier.Analyzer" Version="2.0.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Owin" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="PackagePublishTool" Version="1.0.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Parallax.CodeGenerator" Version="3.4.9.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Parallax.Core" Version="3.4.9.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Perseus.DataTypes" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="PersonalDataPlatform.Common.Library" Version="1.340.2.264" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Pipelines.Sockets.Unofficial" Version="2.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Polly.Contrib.DuplicateRequestCollapser.Signed" Version="0.2.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Polly.Contrib.WaitAndRetry" Version="1.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Polly.StrongNameSigned" Version="7.2.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Portable.BouncyCastle" Version="1.8.9" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="PortableRankerProxy" Version="1.4.6" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="PortableRankerProxy.NetStandard" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="PowerShellStandard.Library" Version="5.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="protobuf-net" Version="3.1.17" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="protobuf-net.Core" Version="3.1.17" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="QASAPI.NET" Version="9.16.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="ResourceStack.Compression.Externals.LZ4" Version="1.9.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="ResourceStack.Compression.Externals.ZStandard" Version="1.4.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="RhinoMocks" Version="3.6.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="RichardSzalay.MockHttp" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="RoslynCQ" Version="1.23.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="RPS.Official.amd64.MSA" Version="7.0.6737" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="RPSv6.7" Version="6.7.6626.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="runtime.win-x64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="runtime.win7-x64.Microsoft.NETCore.DotNetHost" Version="1.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="runtime.win7-x64.Microsoft.NETCore.DotNetHostPolicy" Version="1.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="runtime.win7-x64.Microsoft.NETCore.DotNetHostResolver" Version="1.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Scrutor" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog" Version="2.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.AspNetCore" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Extensions.Logging" Version="3.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Formatting.Compact" Version="1.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Settings.Configuration" Version="3.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Sinks.Console" Version="3.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Sinks.Debug" Version="2.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Sinks.File" Version="4.1.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SharpZipLib" Version="1.3.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SimpleInjector" Version="5.4.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SimpleInjector.Integration.AspNetCore" Version="5.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="5.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SimpleInjector.Integration.ServiceCollection" Version="5.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Snappy.NET-Signed" Version="1.1.1.8" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="StackExchange.Redis" Version="2.6.48" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Storage.XStore.CompressionModule" Version="0.0.0.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="StrongNamer" Version="0.2.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="StyleCop.Analyzers" Version="1.1.118" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.Core.Models" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.Data.Storage" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.Interop" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.Mrs.TestData" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.AlertBox" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.AspMvc4" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.BPOS" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.CosmosLatestStable" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.EnterpriseLibrary" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.FederatedDirectory" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.FUSELabs" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.Infer.Net" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.Monad" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.rap" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.PartnerRelease.WcfDataService" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.People.Resources" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateBinaries.QTests.BigFunnel" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="SubstrateInventorySDK" Version="0.0.190" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Buffers" Version="4.5.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.CodeDom" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Collections.Immutable" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ComponentModel.Annotations" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ComponentModel.Composition" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ComponentModel.Composition.Registration" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Data.DataSetExtensions" Version="4.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Data.Odbc" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Data.OleDB" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Data.SqlClient" Version="4.8.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Diagnostics.DiagnosticSource" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Diagnostics.EventLog" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Diagnostics.PerformanceCounter" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.DirectoryServices" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.DirectoryServices.AccountManagement" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.DirectoryServices.Protocols" Version="5.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Drawing.Common" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Formats.Asn1" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Interactive" Version="4.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Interactive.Async" Version="3.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Abstractions" Version="6.0.14" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Abstractions.TestingHelpers" Version="6.0.14" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Hashing" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Packaging" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Pipelines" Version="6.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.IO.Ports" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Linq.Async" Version="4.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Linq.Dynamic.Core" Version="1.2.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Management" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Management.Automation" Version="3.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="System.Management.Automation" Version="6.2.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Memory" Version="4.5.5" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Memory.Data" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Net.Http" Version="4.3.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Net.Http.Json" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Net.Http.WinHttpHandler" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Net.WebSockets.WebSocketProtocol" Version="4.5.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Numerics.Vectors" Version="4.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Private.ServiceModel" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reactive" Version="4.3.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reflection.Context" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reflection.DispatchProxy" Version="4.7.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reflection.Metadata" Version="1.6.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reflection.MetadataLoadContext" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Reflection.TypeExtensions" Version="4.4.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Runtime.Caching" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Runtime.Loader" Version="4.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.AccessControl" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Cryptography.Cng" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Cryptography.Pkcs" Version="6.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Cryptography.Xml" Version="6.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Permissions" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Security.Principal.Windows" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Duplex" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Federation" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Http" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.NetTcp" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Primitives" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Security" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceModel.Syndication" Version="5.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.ServiceProcess.ServiceController" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Spatial" Version="5.8.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Text.Encodings.Web" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Text.Json" Version="6.0.7" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Threading.AccessControl" Version="4.7.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Threading.Channels" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Threading.RateLimiting" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Threading.Tasks.Dataflow" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Time" Version="1.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Web.Services.Description" Version="4.10.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Windows.Extensions" Version="7.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Torus.NetCore" Version="16.1.2167" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="TorusBuild" Version="16.1.925" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="TorusLiteSdk" Version="16.1.2160" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="TorusSDK" Version="16.1.2167" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="TorusSubstrateSecuritySdk" Version="16.1.2160" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Unity" Version="4.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="Unity" Version="5.11.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.MailboxAssistants.Reminders.Resources" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.ManagedStore" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.PartnerRelease.AppFabric" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.PartnerRelease.Fast" Version="1.0.13" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.PartnerRelease.Fim" Version="1.0.2" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.PartnerRelease.OfficeBigData" Version="1.0.11" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.PartnerRelease.SharePoint" Version="1.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UtahBinaries.UnifiedGroupsResources" Version="1.0.13" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="UTF.Unknown" Version="2.5.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="VisualStudio.VCRuntime" Version="1.0.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Webstore.Soup" Version="1.0.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Webstore.Spiller" Version="1.0.10" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="WindowsAzure.ServiceBus" Version="6.0.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="WindowsAzure.Storage" Version="4.3.0" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Update="WindowsAzure.Storage" Version="9.3.3" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="WorkflowSDK" Version="2.1.52" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="YamlDotNet" Version="8.1.1" />
+		<!--This comment exists to prevent Git merge conflicts.  Do not delete it when editing this file.-->
+		<PackageVersion Include="Yarp.ReverseProxy" Version="1.1.1" />
+	</ItemGroup>
+</Project>

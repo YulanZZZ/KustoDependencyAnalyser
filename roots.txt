@@ -1,0 +1,10 @@
+Microsoft.M365.Core.Telemetry.Enrichment
+Microsoft.M365.Core.Telemetry.R9
+Microsoft.Extensions.DependencyInjection
+Microsoft.R9.Extensions.Options.Validation
+OpenTelemetry.Exporter.Geneva
+Microsoft.M365.Core.PassiveMonitoring
+Microsoft.R9.Extensions.HttpClient.Tracing
+Microsoft.R9.Extensions.Redaction.Abstractions
+Microsoft.R9.Extensions.Redaction
+Microsoft.R9.Extensions.Tracing.Exporters.Geneva
