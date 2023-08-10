@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 using Kusto.Cloud.Platform.Utils;
 using Kusto.Data;
 using Kusto.Data.Common;
@@ -62,10 +63,42 @@ namespace KustoDependencyAnalyser
             return "";
         }
 
-        private static string GetDllsOfPackage(string packageName)
+        private static List<string> GetDllsOfPackage(string packageName)
         {
+            var dlls = new SortedSet<string>();
             var version = GetVersionInPackagesProps(packageName);
-            return $"\"{PackageAssemblyTable}\" | where Name == \"{packageName}\" and Version == \"{version}\"";
+            var query = $"{PackageAssemblyTable} | where Name == \"{packageName}\" and Version == \"{version}\"";
+            using var queryProvider = KustoClientFactory.CreateCslQueryProvider(Kscb);
+            var clientRequestProperties = new ClientRequestProperties() { ClientRequestId = Guid.NewGuid().ToString() };
+            using var reader = queryProvider.ExecuteQuery(query, clientRequestProperties);
+            
+            /*
+             Schema of package assembly table:
+            0   Name: string
+            1   Version: string
+            2   AssemblyName: string
+            3   AssemblyVersion: string
+            4   LibraryDirectoryPath: string
+            5   AssemblySourceType: string
+            6   AssemblySource: string
+             */
+            while(reader.Read())
+            {
+                dlls.Add($"{reader.GetString(0)}    {reader.GetString(2)}   {reader.GetString(3)}   {reader.GetString(4)}");
+            }
+            return dlls.ToList();
+        }
+
+        /*
+         Known format:
+        [version,version]
+        (,)
+        (version,version)
+        [version,)
+         */
+        private static bool CheckVersionConflict(string dependencyVersionRange,string requiredVersion)
+        {
+            return true;
         }
 
         /*
@@ -75,10 +108,15 @@ namespace KustoDependencyAnalyser
         {
             var dependencies = new List<string>();
             var version = GetVersionInPackagesProps(packageName);
+            
+            //Stopwatch sw = new();
+            //sw.Start();
             var query = $"{PackageDependencyTable} | where Name == \"{packageName}\" and Version == \"{version}\"";
             using var queryProvider = KustoClientFactory.CreateCslQueryProvider(Kscb);
             var clientRequestProperties = new ClientRequestProperties() { ClientRequestId = Guid.NewGuid().ToString() };
             using var reader = queryProvider.ExecuteQuery(query, clientRequestProperties);
+            //sw.Stop();
+            //Console.WriteLine($"Time of querying dependencies elapsed: {sw.Elapsed}");
 
             /*
              Schema of package dependency table:
@@ -86,10 +124,11 @@ namespace KustoDependencyAnalyser
             1   Version: string
             2   TargetFramework: string
             3   DependencyName: string
-            4   DependencyVersionRange  : string
+            4   DependencyVersionRange: string
              */
             while (reader.Read())
             {
+                //todo judge version conflict
                 dependencies.Add(reader.GetString(3));
             }
 
@@ -119,17 +158,17 @@ namespace KustoDependencyAnalyser
         {
             InitializePackages();
             DfsGetDependencies();
-            //foreach(string packageName in Packages.ToList())
-            //{
-            //    foreach(string dependency in QueryDependencies(packageName))
-            //    {
-            //        Packages.Add(dependency);
-                   
-            //    }
-            //}
-            foreach(var dll in Packages)
+            foreach(var package in Packages)
             {
-                Console.WriteLine(dll);
+                Console.WriteLine(package);
+            }
+            foreach(var package in Packages)
+            {
+                var dlls = GetDllsOfPackage(package);
+                foreach(var dll in dlls)
+                {
+                    Console.WriteLine(dll);
+                }
             }
         }
 
