@@ -1,21 +1,33 @@
-﻿using System;
-using System.Reflection;
-using System.Text.RegularExpressions;
-using System.Diagnostics;
-using Kusto.Cloud.Platform.Utils;
+﻿using Kusto.Cloud.Platform.Utils;
 using Kusto.Data;
 using Kusto.Data.Common;
-using Kusto.Data.Linq;
 using Kusto.Data.Net.Client;
-using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
 namespace KustoDependencyAnalyser
 
 {
-    // This sample illustrates how to query Kusto using the Kusto.Data .NET library.
-    //
-    // For the purpose of demonstration, the query being sent retrieves multiple result sets.
-    //
+    internal sealed record Package(string Name, string Version) : IComparable<Package>
+    {
+        public int CompareTo(Package? package)
+        {
+            if (package == null)
+            {
+                return 1;
+            }
+            return Name.CompareTo(package.Name);
+        }
+
+        public bool Equals(Package? package)
+        {
+            if (package == null)
+            {
+                return false;
+            }
+            return Name == package.Name;
+        }
+    }
+
     // The program should execute in an interactive context (so that on first run the user
     // will get asked to sign in to Azure AD to access the Kusto service).
     class Program
@@ -24,16 +36,16 @@ namespace KustoDependencyAnalyser
         private const string Database = "dependency";
         private const string PackageAssemblyTable = "PackageAssembly";
         private const string PackageDependencyTable = "PackageDependency";
-        private const string PackageDependencyCSVFile = "PackageDependency.csv";
+        private const string PackagesCSVFile = "Packages.csv";
         private const string DllInfoCSVFile = "DllInfo.csv";
         private const string DefaultRootFile = "roots.txt";
         private const string DefaultPackagesPropsFile = "Packages.props";
-        private const string PackageVersionMissingFile = "PackageVersionMissing.txt";
-        private const string VersionConflictsFile = "VersionConflicts.txt";
+        private const string VersionConflictsFile = "VersionConflicts.csv";
 
         private static readonly KustoConnectionStringBuilder Kscb = new KustoConnectionStringBuilder(Cluster, Database)
             .WithAadUserPromptAuthentication();
-        private static readonly HashSet<string> Packages = new();
+        private static readonly SortedSet<Package> Packages = new();
+        private static readonly SortedSet<string> Conflicts = new();
 
         private static void InitializePackages()
         {
@@ -41,7 +53,7 @@ namespace KustoDependencyAnalyser
             string? line;
             while ((line = sr.ReadLine()) != null)
             {
-                Packages.Add(line);
+                Packages.Add(new Package(line, GetVersionInPackagesProps(line)));
             }
         }
 
@@ -49,8 +61,8 @@ namespace KustoDependencyAnalyser
         {
             using StreamReader sr = new(DefaultPackagesPropsFile);
             string? line;
-            var pattern = "\\s*<PackageVersion Include=\".+\" Version=\".+\"\\s*/>\\s*";
-
+            var pattern = "\\s*<PackageVersion (Include|Update)=\".+\" Version=\".+\"\\s*/>\\s*";
+            var version = "";
             while ((line = sr.ReadLine()) != null)
             {
                 Match match = Regex.Match(line, pattern);
@@ -62,16 +74,17 @@ namespace KustoDependencyAnalyser
                     {
                         var versionStart = line.NthIndexOf('\"', 3) + 1;
                         var versionEnd = line.NthIndexOf('\"', 4);
-                        return line[versionStart..versionEnd];
+                        version = line[versionStart..versionEnd];
                     }
                 }
             }
-            return "";
+            return version;
         }
 
-        private static List<string> GetDllsOfPackage(string packageName)
+        private static List<string> GetDllsOfPackage(Package package)
         {
             var dlls = new SortedSet<string>();
+            var packageName = package.Name;
             var version = GetVersionInPackagesProps(packageName);
             var query = $"{PackageAssemblyTable} | where Name == \"{packageName}\" and Version == \"{version}\"";
             using var queryProvider = KustoClientFactory.CreateCslQueryProvider(Kscb);
@@ -95,34 +108,6 @@ namespace KustoDependencyAnalyser
             return dlls.ToList();
         }
 
-        private static void HandleVersionIssues(string packageName, string packageVersion, string dependencyName, string dependencyVersion, string dependencyVersionRange)
-        {
-            if (dependencyVersion == "")
-            {
-                HandleVersionMissing(dependencyName, dependencyVersion);
-            }
-            else
-            {
-                CheckVersionConflicts(packageName, packageVersion, dependencyName, dependencyVersion, dependencyVersionRange);
-            }
-
-        }
-
-        private static void HandleVersionMissing(string packageName, string version)
-        {
-            if (version == "")
-            {
-                using StreamWriter sw = new(PackageVersionMissingFile, true);
-                sw.WriteLine($"{packageName} {version}");
-            }
-        }
-
-        private static void HandleDependency(string packageName, string packageVersion, string targetFramework, string dependencyName, string dependencyVersion)
-        {
-            using StreamWriter sw = new(PackageDependencyCSVFile, true);
-            sw.WriteLine($"{packageName},{packageVersion},{targetFramework},{dependencyName},{dependencyVersion}");
-        }
-
         /*
          Known format:
         Attention: There is always a space after comma
@@ -133,7 +118,7 @@ namespace KustoDependencyAnalyser
         [version, version)
         [version, version]
          */
-        private static void CheckVersionConflicts(string packageName, string packageVersion, string dependencyName, string dependencyVersion, string versionRange)
+        private static void CheckVersionConflicts(string packageName, string packageVersion, string dependencyName, string dependencyVersion, string versionRange, string targetFramework)
         {
             bool lbIncluded;
             bool ubIncluded;
@@ -180,8 +165,7 @@ namespace KustoDependencyAnalyser
             var versionNumericPart = matchRequired.Groups[1].Value;
             if (!IsVersionValid(lowerBound, upperBound, lbIncluded, ubIncluded, versionNumericPart))
             {
-                using StreamWriter sw = new(VersionConflictsFile, true);
-                sw.WriteLine($"Version conflict: {packageName} {dependencyVersion} depends on {dependencyName} {versionRange}, but version in Packages.props is {dependencyVersion}");
+                Conflicts.Add($"{targetFramework},{packageName},{packageVersion},{dependencyName},\"{versionRange}\",{dependencyVersion}");
             }
         }
 
@@ -200,9 +184,10 @@ namespace KustoDependencyAnalyser
         /*
          Query the package dependency table to get the dependencies of a package.
          */
-        private static List<string> QueryDependencies(string packageName)
+        private static List<Package> QueryDependencies(Package package)
         {
-            var dependencies = new List<string>();
+            var dependencies = new List<Package>();
+            var packageName = package.Name;
             var packageVersion = GetVersionInPackagesProps(packageName);
 
             //Stopwatch sw = new();
@@ -227,23 +212,24 @@ namespace KustoDependencyAnalyser
                 var targetFramework = reader.GetString(2);
                 var dependencyName = reader.GetString(3);
                 var dependencyVersionRange = reader.GetString(4);
-                dependencies.Add(dependencyName);
                 var dependcyVersion = GetVersionInPackagesProps(dependencyName);
-                HandleVersionIssues(packageName, packageVersion, dependencyName, dependcyVersion, dependencyVersionRange);
-                HandleDependency(packageName, packageVersion, targetFramework, dependencyName, dependcyVersion);
+                if (dependcyVersion != "")
+                {
+                    dependencies.Add(new Package(dependencyName, dependcyVersion));
+                    CheckVersionConflicts(packageName, packageVersion, dependencyName, dependcyVersion, dependencyVersionRange, targetFramework);
+                }
             }
-
             return dependencies;
         }
 
         private static void DfsGetDependencies()
         {
-            var stack = new Stack<string>(Packages);
+            var stack = new Stack<Package>(Packages.ToList());
             while (stack.Count > 0)
             {
-                var packageName = stack.Pop();
-                Console.WriteLine($"Processing {packageName}");
-                var dependencies = QueryDependencies(packageName);
+                var package = stack.Pop();
+                Console.WriteLine($"Processing {package.Name}");
+                var dependencies = QueryDependencies(package);
                 foreach (var dependency in dependencies)
                 {
                     if (!Packages.Contains(dependency))
@@ -255,27 +241,14 @@ namespace KustoDependencyAnalyser
             }
         }
 
-        private static void DistinctFileOutput(string fileName)
+        private static void GeneratePackagesCSV()
         {
-            SortedSet<string> missingVersions = new();
-            using StreamReader sr = new(fileName);
-            string? line;
-            while ((line = sr.ReadLine()) != null)
+            using StreamWriter sw = new(PackagesCSVFile);
+            sw.WriteLine("packageName,packageVersion");
+            foreach (var package in Packages)
             {
-                missingVersions.Add(line);
+                sw.WriteLine($"{package.Name},{package.Version}");
             }
-            sr.Close();
-            using StreamWriter sw = new(fileName);
-            foreach (var missingVersion in missingVersions)
-            {
-                sw.WriteLine(missingVersion);
-            }
-        }
-
-        private static void GeneratePackageDependencyCSV()
-        {
-            using StreamWriter sw = new(PackageDependencyCSVFile);
-            sw.WriteLine("packageName,packageVersion,targetFramework,dependencyName,dependencyVersion");
         }
 
         private static void GenerateDllInfoCSV()
@@ -292,15 +265,23 @@ namespace KustoDependencyAnalyser
             }
         }
 
+        private static void GenerateConflictsCSV()
+        {
+            using StreamWriter sw = new(VersionConflictsFile);
+            sw.WriteLine("targetFramework,packageName,packageVersion,dependencyName,versionRange,dependencyVersion");
+            foreach (var conflict in Conflicts)
+            {
+                sw.WriteLine(conflict);
+            }
+        }
+
         static void Main()
         {
             InitializePackages();
-            GeneratePackageDependencyCSV();
             DfsGetDependencies();
+            GeneratePackagesCSV();
             GenerateDllInfoCSV();
-            DistinctFileOutput(PackageVersionMissingFile);
-            DistinctFileOutput(VersionConflictsFile);
-            DistinctFileOutput(PackageDependencyCSVFile);
+            GenerateConflictsCSV();
         }
     }
 }

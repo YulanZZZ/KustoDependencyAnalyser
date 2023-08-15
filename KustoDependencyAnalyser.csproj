@@ -21,16 +21,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Content Include="roots.backup.txt">
-		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
 		<Content Include="roots.txt">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 		<Content Include="Packages.props">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
-		<Content Include="VersionConflicts.txt">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
