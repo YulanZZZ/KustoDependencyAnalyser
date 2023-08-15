@@ -475,3 +475,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Local results
+VersionConflicts.txt
+VersionMissing.txt
