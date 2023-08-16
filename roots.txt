@@ -1,6 +1,6 @@
 Microsoft.M365.Core.Telemetry.Enrichment
-Microsoft.M365.Core.Telemetry.R9
 Microsoft.Extensions.DependencyInjection
+Microsoft.M365.Core.Telemetry.R9
 Microsoft.R9.Extensions.Options.Validation
 OpenTelemetry.Exporter.Geneva
 Microsoft.M365.Core.PassiveMonitoring

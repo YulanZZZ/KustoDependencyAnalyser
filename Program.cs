@@ -4,10 +4,13 @@ using Kusto.Data.Common;
 using Kusto.Data.Net.Client;
 using System.Text.RegularExpressions;
 
+
 namespace KustoDependencyAnalyser
 
 {
-    internal sealed record Package(string Name, string Version) : IComparable<Package>
+    using RootPackages = SortedSet<Package>;
+
+    record Package(string Name, string Version) : IComparable<Package>
     {
         public int CompareTo(Package? package)
         {
@@ -15,16 +18,29 @@ namespace KustoDependencyAnalyser
             {
                 return 1;
             }
-            return Name.CompareTo(package.Name);
+            return ToString().CompareTo(package.ToString());
         }
 
-        public bool Equals(Package? package)
+        public override string ToString()
         {
-            if (package == null)
+            return $"{Name},{Version}";
+        }
+    }
+
+    record Dll(string Name, string Version, string AssemblyName, string AssemblyVersion, string LibraryDirectoryPath) : IComparable<Dll>
+    {
+        public int CompareTo(Dll? dll)
+        {
+            if (dll == null)
             {
-                return false;
+                return 1;
             }
-            return Name == package.Name;
+            return ToString().CompareTo(dll.ToString());
+        }
+
+        public override string ToString()
+        {
+            return $"{Name},{Version},{AssemblyName},{AssemblyVersion},{LibraryDirectoryPath}";
         }
     }
 
@@ -44,18 +60,8 @@ namespace KustoDependencyAnalyser
 
         private static readonly KustoConnectionStringBuilder Kscb = new KustoConnectionStringBuilder(Cluster, Database)
             .WithAadUserPromptAuthentication();
-        private static readonly SortedSet<Package> Packages = new();
         private static readonly SortedSet<string> Conflicts = new();
-
-        private static void InitializePackages()
-        {
-            using StreamReader sr = new(DefaultRootFile);
-            string? line;
-            while ((line = sr.ReadLine()) != null)
-            {
-                Packages.Add(new Package(line, GetVersionInPackagesProps(line)));
-            }
-        }
+        private static readonly SortedDictionary<Package, RootPackages> PackageToRoots = new();
 
         private static string GetVersionInPackagesProps(string packageName)
         {
@@ -81,9 +87,9 @@ namespace KustoDependencyAnalyser
             return version;
         }
 
-        private static List<string> GetDllsOfPackage(Package package)
+        private static List<Dll> GetDllsOfPackage(Package package)
         {
-            var dlls = new SortedSet<string>();
+            var dlls = new SortedSet<Dll>();
             var packageName = package.Name;
             var version = GetVersionInPackagesProps(packageName);
             var query = $"{PackageAssemblyTable} | where Name == \"{packageName}\" and Version == \"{version}\"";
@@ -103,7 +109,8 @@ namespace KustoDependencyAnalyser
              */
             while (reader.Read())
             {
-                dlls.Add($"{reader.GetString(0)},{reader.GetString(1)},{reader.GetString(2)},{reader.GetString(3)},{reader.GetString(4)}");
+                var dll = new Dll(reader.GetString(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4));
+                dlls.Add(dll);
             }
             return dlls.ToList();
         }
@@ -184,9 +191,9 @@ namespace KustoDependencyAnalyser
         /*
          Query the package dependency table to get the dependencies of a package.
          */
-        private static List<Package> QueryDependencies(Package package)
+        private static List<Package> QueryDependency(Package package)
         {
-            var dependencies = new List<Package>();
+            var dependencies = new SortedSet<Package>();
             var packageName = package.Name;
             var packageVersion = GetVersionInPackagesProps(packageName);
 
@@ -219,48 +226,71 @@ namespace KustoDependencyAnalyser
                     CheckVersionConflicts(packageName, packageVersion, dependencyName, dependcyVersion, dependencyVersionRange, targetFramework);
                 }
             }
-            return dependencies;
+            return dependencies.ToList();
         }
 
-        private static void DfsGetDependencies()
+        private static void QueryDependencyFromRoot(Package rootPackage)
         {
-            var stack = new Stack<Package>(Packages.ToList());
+            var stack = new Stack<Package>();
+            stack.Push(rootPackage);
             while (stack.Count > 0)
             {
                 var package = stack.Pop();
                 Console.WriteLine($"Processing {package.Name}");
-                var dependencies = QueryDependencies(package);
+                var dependencies = QueryDependency(package);
                 foreach (var dependency in dependencies)
                 {
-                    if (!Packages.Contains(dependency))
+                    if (PackageToRoots.ContainsKey(dependency))
                     {
-                        Packages.Add(dependency);
+                        if (PackageToRoots[dependency].Add(rootPackage))
+                        {
+                            stack.Push(dependency);
+                        }
+                    }
+                    else
+                    {
+                        PackageToRoots.Add(dependency, new() { rootPackage });
                         stack.Push(dependency);
                     }
                 }
             }
         }
 
+        private static void QueryAllDependencies()
+        {
+            using StreamReader sr = new(DefaultRootFile);
+            string? line;
+            while ((line = sr.ReadLine()) != null)
+            {
+                PackageToRoots.Add(new Package(line, GetVersionInPackagesProps(line)), new());
+            }
+            var RootPackages = PackageToRoots.Keys.ToList();
+            foreach (var package in RootPackages)
+            {
+                Console.WriteLine($"Processing root package: {package.Name}");
+                QueryDependencyFromRoot(package);
+            }
+        }
+
         private static void GeneratePackagesCSV()
         {
             using StreamWriter sw = new(PackagesCSVFile);
-            sw.WriteLine("packageName,packageVersion");
-            foreach (var package in Packages)
+            sw.WriteLine("PackageName,PackageVersion,RootPackages");
+            foreach (var package in PackageToRoots.Keys)
             {
-                sw.WriteLine($"{package.Name},{package.Version}");
+                sw.WriteLine($"{package},\"{string.Join(", ", PackageToRoots[package].Select(p => p.Name))}\"");
             }
         }
 
         private static void GenerateDllInfoCSV()
         {
             using StreamWriter sw = new(DllInfoCSVFile);
-            sw.WriteLine("packageName,packageVersion,dllName,dllVersion,libraryDirectoryPath");
-            foreach (var package in Packages)
+            sw.WriteLine("PackageName,PackageVersion,DllName,DllVersion,LibraryDirectoryPath,RootPackages");
+            foreach (var package in PackageToRoots.Keys)
             {
-                var dlls = GetDllsOfPackage(package);
-                foreach (var dll in dlls)
+                foreach (var dll in GetDllsOfPackage(package))
                 {
-                    sw.WriteLine(dll);
+                    sw.WriteLine($"{dll},\"{string.Join(",", PackageToRoots[package].Select(p => p.Name))}\"");
                 }
             }
         }
@@ -268,7 +298,7 @@ namespace KustoDependencyAnalyser
         private static void GenerateConflictsCSV()
         {
             using StreamWriter sw = new(VersionConflictsFile);
-            sw.WriteLine("targetFramework,packageName,packageVersion,dependencyName,versionRange,dependencyVersion");
+            sw.WriteLine("TargetFramework,PackageName,PackageVersion,DependencyName,VersionRange,DependencyVersion");
             foreach (var conflict in Conflicts)
             {
                 sw.WriteLine(conflict);
@@ -277,8 +307,7 @@ namespace KustoDependencyAnalyser
 
         static void Main()
         {
-            InitializePackages();
-            DfsGetDependencies();
+            QueryAllDependencies();
             GeneratePackagesCSV();
             GenerateDllInfoCSV();
             GenerateConflictsCSV();
