@@ -8,3 +8,4 @@ Microsoft.R9.Extensions.HttpClient.Tracing
 Microsoft.R9.Extensions.Redaction.Abstractions
 Microsoft.R9.Extensions.Redaction
 Microsoft.R9.Extensions.Tracing.Exporters.Geneva
+Microsoft.M365.Core.Telemetry.R9.Tracing.Instrumentation.Accelerator
